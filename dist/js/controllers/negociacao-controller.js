@@ -8,11 +8,12 @@ export class NegociacaoController {
         this.inputData = document.querySelector("#data");
         this.inputQuantidade = document.querySelector("#quantidade");
         this.inputValor = document.querySelector("#valor");
-        this.negociacoesView.update();
+        this.negociacoesView.update(this.negociacoes);
     }
     adiciona() {
         const negociacao = this.criaNegociacao();
         this.negociacoes.adiciona(negociacao);
+        this.negociacoesView.update(this.negociacoes);
         console.log(negociacao);
         this.limparFormulario();
     }
