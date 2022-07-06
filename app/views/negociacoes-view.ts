@@ -28,7 +28,7 @@ export class NegociacoesView extends View<Negociacoes>{
         `;
     }
 
-    private formatar(data: Date) {
+    private formatar(data: Date): string {
         return new Intl.DateTimeFormat().format(data)
     }
 }
