@@ -1,13 +1,11 @@
 {
     "compilerOptions": {
-        "outDir": "dist/js", // pasta base dos arquivos ts, de onde devem ser copiados
+        "outDir": "app/dist/js", // pasta base dos arquivos ts, de onde devem ser copiados
         "target": "ES6", // versão que deve ser gerada do js ao transformar ts em js
         "noEmitOnError": true, // não compilar o js se houver erro no ts
         "noImplicitAny": true,
         "removeComments": true,
         "strictNullChecks": true
     },
-    "include": [
-        "app/**/*"
-    ]
+    "include": ["app/src/**/*"]
 }
