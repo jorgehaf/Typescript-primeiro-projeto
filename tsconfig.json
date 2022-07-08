@@ -5,7 +5,8 @@
         "noEmitOnError": true, // não compilar o js se houver erro no ts
         "noImplicitAny": true,
         "removeComments": true,
-        "strictNullChecks": true
+        "strictNullChecks": true,
+        "experimentalDecorators": true
     },
     "include": ["app/src/**/*"]
 }
