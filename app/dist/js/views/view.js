@@ -5,7 +5,7 @@ export class View {
             this.elemento = elemento;
         }
         else {
-            throw Error(`Seletor ${seletor} não existe no DOM. Verifique`);
+            throw Error(`Seletor ${seletor} não existe no DOM.`);
         }
     }
     update(model) {
