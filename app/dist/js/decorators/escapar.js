@@ -3,7 +3,8 @@ export function escapar(target, propertyKey, descriptor) {
     descriptor.value = function (...args) {
         let retorno = metodoOriginal.apply(this, args);
         if (typeof retorno === 'string') {
-            retorno = retorno.replace(/<script>[\s\S]*?<\/script>/, '');
+            retorno = retorno
+                .replace(/<script>[\s\S]*?<\/script>/, '');
         }
         return retorno;
     };

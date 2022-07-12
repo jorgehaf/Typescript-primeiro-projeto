@@ -1,10 +1,10 @@
-export function inspect(target, propertKey, descriptor) {
+export function inspect(target, propertyKey, descriptor) {
     const metodoOriginal = descriptor.value;
     descriptor.value = function (...args) {
-        console.log(`--- Método ${propertKey}`);
-        console.log(`--- Parâmetros ${JSON.stringify(args)}`);
+        console.log(`--- Método ${propertyKey}`);
+        console.log(`------ parâmetros: ${JSON.stringify(args)}`);
         const retorno = metodoOriginal.apply(this, args);
-        console.log(`--- retorno ${JSON.stringify(retorno)}`);
+        console.log(`------ retorno: ${JSON.stringify(retorno)}`);
         return retorno;
     };
     return descriptor;
