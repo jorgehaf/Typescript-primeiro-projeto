@@ -6,7 +6,8 @@
         "noImplicitAny": true,
         "removeComments": true,
         "strictNullChecks": true,
-        "experimentalDecorators": true
+        "experimentalDecorators": true,
+        "sourceMap": false // opção para o js colocar o ts como padrão ao debugar (normalmente usado somente em dev)
     },
     "include": ["app/src/**/*"]
 }
